@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="header">
+  <div>
+    <img id="header-img" src="images/logo.png">
+  </div>
+  <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#features">Features</a></li>
+      <li><a class="nav-link" href="#how-to-install">How to install</a></li>
+      <li><a class="nav-link" href="#alt">Alternatives</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main id="main">
+  <section id="features">
+    <h2 id="features-label">Features:</h2>
+    <div class="point" id="rolling">
+      <div class="desc">
+        <h3>Rolling Release</h3>
+        <p> Arch Linux uses a "rolling release" system which allows one-time installation and perpetual software upgrades. It is not generally necessary to reinstall or upgrade your system from one "version" to the next. By issuing one command, Arch Linux is kept up-to-date and on the bleeding edge</p>
+        </div>
+      </div>
+     <div class="point" id="2">
+      <div class="desc">
+        <h3>Package Manager</h3>
+        <p>Arch Linux uses its own package manager called "pacman", Which couples simple binary packages with an easy-to-use package build system. This allows users to easily manage and customize packages ranging from official Arch software to the user's own personal packages to packages from 3rd party sources.</p>
+        </div>
+      </div>
+    <div class="point" id="3">
+      <div class="desc">
+        <h3>Minimal Install</h3>
+        <p>Arch Linux will only install packages it needs. The user will need to install packages they're going to use for their system, this gives the user more control of wants on their system.</p>
+        </div>
+      </div>
+  </section>
+  <section id="how-to-install">
+    <h2>How to Install:</h2>
+    <iframe id="video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;" allowfullscreen src="https://www.youtube-nocookie.com/embed/rUEnS1zj1DM"></iframe>
+    
+  </section>
+  <h2 id="alt-label">Alternative Distros:</h2>
+  <section id="alt">
+    <div class="distro" id="endOS">
+      <div class="title">EndeavourOS</div>
+      <h2><a class="web" href="https://endeavouros.com/">Offical Website</a></h2>
+      <img class="icon" src="images/endOS.png" width="150" height="150">
+      <button class="downloadBtn"><a class="iso" href="https://github.com/endeavouros-team/ISO/releases/download/1-EndeavourOS-ISO-releases-archive/EndeavourOS_Apollo_22_1.iso">Download ISO</a></button>
+    </div>
+    
+    <div class="distro" id="garuda">
+      <div class="title">Garuda Linux</div>
+      <h2><a class="web" href="https://garudalinux.org/">Offical Website</a></h2>
+      <img class="icon" src="images/Garuda.png" width="150" height="150">
+      <button class="downloadBtn"><a class="iso" href="https://sourceforge.net/projects/garuda-linux/files/garuda/dr460nized/220428/garuda-dr460nized-linux-zen-220428.iso/download" target="_blank">Download ISO</a></button>
+    </div>
+    
+    <div class="distro" id="xero">
+      <div class="title">XeroLinux</div>
+      <h2><a class="web" href="https://www.xerolinux.xyz/">Offical Website</a></h2>
+      <img class="icon" src="images/Xero.png" width="150" height="150">
+      <button class="downloadBtn"><a class="iso" href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download" target="_blank">Download ISO</a></button>
+    </div>
+  </section>
+  
+  <section id="contact-form">
+    <h2>Feel free to contact us</h2>
+    <form id="form" action="https://www.freecodecamp.org/email-submit">
+      <input id="email" name="email" type="email" placeholder="Enter your email" required/>
+      <input id="submit" type="submit" value="Send"/>
+    </form>
+  </section>
+</main>
+  <script src='bundle.js'></script><script  src="script.js"></script>
+</body>
+</html>

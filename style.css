@@ -1,0 +1,212 @@
+body {
+    background-color: #3E5C76;
+    color: white;
+    font-family: Arial;
+    align-items: center;
+  }
+  
+  #main {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 10vh;
+  }
+  
+  #header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    min-height: 78px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+  }
+  
+  #header-img {
+    top: 0;
+    left: 0;
+    max-height: 78px;
+    position: fixed;
+  }
+  
+  nav {
+    font-weight: 400;
+  }
+  
+  @media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+    #header-img {
+      visibility: hidden;
+    }
+  }
+  
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+  
+  .nav-link {
+    color: #1D2D44;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  #title, #description {
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  
+  #features-label {
+    margin-top: 30px;
+    margin-bottom: -5px;
+    text-align: center;
+  }
+  #features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #how-to-install {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  #how-it-works > iframe {
+    max-width: 560px;
+    width: 100%;
+  }
+  
+  .distro {
+    display: flex;
+  }
+  
+  #alt-label {
+    margin-bottom: -40px;
+    text-align: center;
+  }
+  
+  #alt {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .distro {
+    display: flex;
+    background-color: #1D2D44;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .distro > .title {
+    background-color: white;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700;
+  }
+  
+  .distro > h2 {
+    margin-top: 15px;
+  }
+  
+  .web{
+    color: white;
+  }
+  .iso {
+    text-decoration: none;
+    color: black;
+  }
+  
+  @media (max-width: 800px) {
+    #alt {
+      flex-direction: column;
+    }
+    .distro {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .downloadBtn{
+    border: 0;
+    border-radius: 6px;
+    border: 0;
+    margin: 15px 0;
+    background-color: white;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .downloadBtn:hover, #submit:hover {
+    background-color: gray;
+    cursor: pointer;
+  }
+  
+  #submit {
+    max-width: 50px;
+    width: 100%;
+    height: 29px;
+    margin: 15px 0;
+    border: 0;
+    background: white;
+  }
+  
+  #email {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #contact-form {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+  }
